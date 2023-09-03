@@ -2,6 +2,17 @@
     font-family: "D2Coding";
     src: url("./D2Coding-Ver1.3.2-20180524.ttc");
 }
+
 * {
     font-family: "D2Coding";
+}
+
+img.icon {
+    width: 30px;
+    height: 30px;
+}
+
+div.flex-elem {
+    flex: 1;
+    text-align: center;
 }
