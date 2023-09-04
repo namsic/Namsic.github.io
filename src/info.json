@@ -1,0 +1,22 @@
+information = {
+    "me": {
+        "name" : "Ing-eoking",
+        "birth" : "1998-00-00",
+        "phone" : "000-0000-0000",
+        "email" : "ing-eoking@fish.com",
+        "github" : "https://www.github.com/ing-eoking",
+        "insta" : ""
+    },
+    "introduce": {
+        "title" : "I hate c.",
+        "content" : [
+            "I want to be a HTML programmer!"
+        ]
+    },
+    "resume": [
+        ""
+    ],
+    "projects":[
+        ""
+    ]
+}
