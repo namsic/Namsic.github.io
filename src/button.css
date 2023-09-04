@@ -1,0 +1,67 @@
+/*
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}*/
+
+.resume-btn {
+    position: relative;
+    border: 3px solid;
+    min-width: 150px;
+    min-height: 50px;
+    background: linear-gradient(
+        90deg,
+        var(--bs-btncolor2),
+        rgba(79, 209, 197, 1) 100%
+    );
+    border-radius: 1000px;
+    color: var(--bs-btntxt);
+    cursor: pointer;
+    box-shadow: 12px 12px 24px #4fd1c49f;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.projects-btn {
+    position: relative;
+    border: 3px solid   ;
+    min-width: 150px;
+    min-height: 50px;
+    background: linear-gradient(
+        90deg,
+        var(--bs-btncolor1),
+        rgba(79, 120, 209, 1) 100%
+    );
+    border-radius: 1000px;
+    color: var(--bs-btntxt);
+    cursor: pointer;
+    box-shadow: 12px 12px 24px #4f97d1a3;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.resume-btn:hover, .projects-btn:hover {
+    transform: scale(1.2);
+}
+
+.resume-btn:hover::after, .projects-btn:hover::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    /*border-radius: 100%;
+    border: 6px solid #00ffcb;*/
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*animation: ring 1.5s infinite;*/
+}

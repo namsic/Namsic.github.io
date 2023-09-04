@@ -1,30 +1,72 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/style.css" />
     <title>Namjae Kim</title>
-    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <div style="text-align: center;">
-      <p>Hello, world!</p>
+  <body data-bs-theme="light" id="b">
+    <header id="header">
+        <div>
+            <button type="button" id="home"></button>
+        </div>
+        <div class="container-toggle">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="d-sm-block"></div>
+        <div class="row-cols-3 d-flex justify-content-center mt10">
+            <img src="assets/profile.png" class="rounded-circle profile"/>
+            <div class="mleft">
+                <div>
+                    <h1 class="mtop" id="title"></h1>
+                    <h1 id="subtitle"></h1>
+                    <h1 id="content">
+                    </h1>
+                </div>
+                <div class="mtop">
+                    <button type="button" class="link resume-btn" style="margin-left:'3%'">Resume</button>
+                    <button type="button" class="link projects-btn">Projects</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row d-flex justify-content-between">
+            <div class="col mt-3 me-5">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p style="font-size: 15px;"><strong>Phone</strong></p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer tail" id="phone"></figcaption>
+                </figure>
+            </div>
+            <div class="col mt-3 ms-5 me-5">
+                <blockquote class="blockquote">
+                    <p style="font-size: 15px;"><strong>Email</strong></p>
+                </blockquote>
+                <figcaption class="blockquote-footer tail" id="email"></figcaption>
+            </div>
+            <div class="col mt-3">
+                <p><strong>Follow Me</strong></p>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex mt-5 page" id="resume-page">
+            Resume<br>
+        </div>
     </div>
-    <hr>
-    <div style="display: flex;">
-      <div class="flex-elem">
-        <p>phone</p>
-        <p>+82 10-6682-3056</p>
-      </div>
-      <div class="flex-elem">
-        <p>email</p>
-        <p>namjae.kim@namsic.dev</p>
-      </div>
-      <div class="flex-elem">
-        <p>other</p>
-        <a href="https://github.com/namsic"><img class="icon" src="img/github-mark.png"></a>
-        <a href="https://www.linkedin.com/in/namjae-kim"><img class="icon" src="img/LI-In-Bug.png"></a>
-        <a href="http://instagram.com/98namsic"><img class="icon" src="img/Instagram_Glyph_Gradient.png"></a>
-        <a href="http://book.namsic.dev"><img class="icon" src="img/GitBook.png"></a>
-      </div>
-    </div>
+    <script type="text/javascript" src="src/info.json"></script>
+    <script src="src/jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="src/bootstrap/js/bootstrap.min.js"></script>
+    <script src="src/main.js"></script>
   </body>
 </html>

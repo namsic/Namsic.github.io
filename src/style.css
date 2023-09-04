@@ -1,0 +1,169 @@
+@import url('toggle.css');
+@import url('button.css');
+@import url('scroll.css');
+
+[data-bs-theme=light]{
+    --bs-body-bg: rgba(245, 239, 232, 1);
+    --bs-btntxt: rgb(52, 58, 64);
+    --bs-btncolor2:  rgba(129, 230, 217, 1) 0%;
+    --bs-btncolor1:  rgba(129, 176, 230, 1) 0%;
+}
+
+[data-bs-theme=dark]{
+    --bs-body-bg: rgba(33, 37, 41, 1);
+    --bs-btntxt: rgba(255, 255, 255, 0.863);
+    --bs-btncolor2:  hsl(143, 8%, 38%);
+    --bs-btncolor1:  #81b0e657 0%;
+}
+
+header {
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+}
+
+body{
+    margin: 0;
+}
+
+hr {
+    width: 95%;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 15%;
+}
+
+button.link {
+    width: 55%;
+    height: 100%;
+    margin: 1%;
+    font-size: calc(0.7rem + 0.4vw);
+    font-weight: 700;
+}
+.page{
+    width:100vw - var(--bs-gutter-x);
+    min-height:100vh;
+    overflow: auto;
+}
+
+.row{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.mt10{
+    margin-top:8%;
+    margin-left:5%;
+}
+.mtop{
+    margin-top:4%;
+}
+.mleft{
+    margin-left:3rem;
+}
+.profile{
+    height: calc(180px + 1.1vh);
+    width: auto;
+    object-fit: cover;
+}
+.tail::before {
+    content: none;
+}
+
+button#home {
+    width: 30px;
+    height: 30px;
+    background: url('../assets/home.png') no-repeat;
+    background-size: cover;
+    border: none;
+}
+#title {
+    font-size: calc(0.7rem + 1.6vw);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#subtitle {
+    margin-top: 6%;
+    font-size: calc(0.4rem + 0.7vw);
+    font-weight: 550;
+    line-height: 1.2;
+}
+#content {
+    margin-top: 3%;
+    padding-right: 30%;
+    font-size: calc(0.1rem + 0.7vw);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media (min-width: 900px) {
+    button.link {
+        width: 40%;
+        height: 100%;
+        margin: 1%;
+    }
+    #title {
+      font-size: 2.5rem;
+    }
+    #subtitle{
+      font-size: 1.0rem;
+    }
+    #content {
+        margin-top: 3%;
+        padding-right: 15%;
+        font-size: calc(0.5rem + 0.7vw);
+        line-height: 160%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .profile {
+        height: 300px;
+        width: auto;
+    }
+    .mtop{
+        margin-top:4%;
+    }
+    .mleft{
+        margin-left:3rem;
+    }
+}
+@media (min-width: 1230px) {
+    button.link {
+        width: 30%;
+        height: 100%;
+        margin: 1%;
+
+    }
+    #title {
+      font-size: 4rem;
+    }
+    #subtitle{
+        margin-top: 6%;
+        font-size: 1.5rem;
+    }
+    #content {
+        margin-top: 3%;
+        padding-right: 20%;
+        font-size: calc(0.4rem + 0.3vw);
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .profile {
+        height: 400px;
+        width: auto;
+    }
+    .mtop{
+        margin-top:4%;
+    }
+    .mleft{
+        margin-left:3rem;
+    }
+
+}
