@@ -1,0 +1,7 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<link href="http://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css" rel="stylesheet" type="text/css">
+{{- with resources.Get "css/style.css" }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- end }}
